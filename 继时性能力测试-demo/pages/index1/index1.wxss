@@ -1,0 +1,8 @@
+/* pages/index1/index1.wxss */
+/* .container{
+  margin-left: 140rpx;
+} */
+.container1{
+ font-size: 50rpx;
+ margin: 100rpx;
+}

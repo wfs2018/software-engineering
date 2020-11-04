@@ -1,0 +1,33 @@
+<!--pages/index1/index1.wxml-->
+<view class='countDown' wx:if="{{show_play}}" style='text-align:center'>已经使用时间：<text style='color:red'>{{num}}</text>s</view>
+<view class="container" wx:if="{{show_home}}">
+      <view class="title" style="margin:40rpx" >
+        句子问答小游戏      
+      </view>
+      <button bindtap="start_game" style="margin:40rpx">
+        开始游戏
+      </button>
+</view>
+<view wx:if="{{show_question}}">
+  <view style="text-align:center" >
+      {{qa[0].text}}
+      </view>
+</view>
+<view class="container1" wx:if="{{show_play}}">
+
+      <view style="text-align:center">
+      {{qa[0].question}}
+      </view>
+      <button wx:for="{{qa[0].chosen}}"   style="margin:40rpx"  bindtap="stop_game"  
+      data-index="{{index}}"   data-item="{{qa[0]}}"  disabled="{{dis}}"> 
+            {{item}}
+      </button>
+      <view style="text-align:center">{{reply}}</view>
+      <view style="text-align:center " wx:if="{{!do_well && show_play}}" >正确答案是：{{real_answer}}</view>
+     <!-- <view style="margin:30rpx"> {{setInter}}</view> -->
+     <!-- <view style="#fff" wx:if="out_time">{{"超时"}}</view> -->
+</view>
+<!-- <view class="container2" wx:if="{{show_play}}">
+  <button type='primary' style='margin-bottom:40px;' bindtap='startSetInter'>开始</button>
+  <button type='primary' bindtap='endSetInter'>结束</button>
+</view> -->

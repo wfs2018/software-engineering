@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index3/index3",
+    "pages/indextest/indextest",
+    "pages/index1/index1",
+    "pages/index2/index2",
+    "pages/logs/logs",
+    "pages/index/index"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "句子重复"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "句子问答"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "字词回忆"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}
